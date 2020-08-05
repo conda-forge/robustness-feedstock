@@ -1,5 +1,5 @@
 {% set name = "robustness" %}
-{% set version = "1.2.post1" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 82b1cae2a5f16846fd4caadab9cd43fda14f752feec76cc79c38be185255ce99
+  sha256: c21430a26dd57330731ed4ee1fb386cdde051b036f007757f0920140bb9268b3
 
 build:
   noarch: python
@@ -52,7 +52,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "Tools for Robustness"
+  summary: Tools for Robustness
   doc_url: https://robustness.readthedocs.io/en/latest/index.html
   dev_url: https://github.com/MadryLab/robustness
 
