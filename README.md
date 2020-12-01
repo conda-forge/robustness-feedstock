@@ -5,11 +5,13 @@ Home: https://robustness.readthedocs.io/en/latest/index.html
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/robustness-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tools for Robustness
 
+Development: https://github.com/MadryLab/robustness
 
+Documentation: https://robustness.readthedocs.io/en/latest/index.html
 
 Current build status
 ====================
