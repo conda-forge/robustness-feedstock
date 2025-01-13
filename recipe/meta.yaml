@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 425d8f2ba204aa7888396458fee013a814595991114d02a16e066863766444c6
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
   # currently not available on osx or win
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - cox
     - dill
     - gitpython
@@ -41,6 +41,8 @@ requirements:
     - tqdm
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - robustness
     - robustness.cifar_models
